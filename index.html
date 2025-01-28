@@ -9,206 +9,196 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play First Story.</tw-noscript></noscript></tw-story>
-<tw-storydata name="First Story" startnode="7" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="A14D9241-8527-4138-A67D-C35575CAC8FA" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-body {
-    font-family: 'Roboto', sans-serif;
+<tw-storydata name="First Story" startnode="13" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="A14D9241-8527-4138-A67D-C35575CAC8FA" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">
+tw-story[tags~="snow"] {
+ background-image:url("https://raw.githubusercontent.com/obi3333/HostedStuff/1d1a2d8b0043bda420c026737c4610f65e594064/FlashLight.png");
+ background-size:cover;
+ background-color: gray;
 }
 
-</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="your door" tags="" position="700,300" size="100,100">The pounding grows more aggressive, shaking your apartment with each impact. Heart pounding, you climb out of bed. It’s late, far too late for visitors. The shadows of the room seem to press in as you approach. Your eyes shift between the trembling door and the [[gun case]] just a few feet away on top of your fridge. Your breath catches as you realize: the [[door’s lock]] is undone.
+tw-story[tags~="summer"] {
+ background-image:url("https://raw.githubusercontent.com/obi3333/HostedStuff/1d1a2d8b0043bda420c026737c4610f65e594064/Lights.png");
+ background-size:cover;
+ background-color: gray;
+}
+</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="your door" tags="summer" position="700,300" size="100,100">&lt;html&gt;
+  &lt;style&gt;
+    tw-story {
+      background-color: rgba(0, 0, 0, 0.6); /* Transparent black */
+      color: white;
+      font-family: Franklin Gothic, serif;
+      padding: 20px; /* Optional: adds some padding around the text */
+      font-size: 24px; /* Adjusted font size for smaller text */
+      display: inline-block;
+    }
+  &lt;/style&gt;
+&lt;/html&gt;
 
-</tw-passagedata><tw-passagedata pid="2" name="gun case" tags="" position="700,500" size="100,100">(set: $randomChoice to (either: &quot;[[the door]]&quot;, &quot;[[The door]]&quot;))
+&lt;tw-story&gt;
+  The pounding grows more aggressive, shaking your apartment with each impact. Heart pounding, you climb out of bed. It’s late, far too late for visitors. The shadows of the room seem to press in as you approach. Your eyes shift between the trembling door and the [[gun case]] just a few feet away on top of your fridge. Your breath catches as you realize: the [[door’s lock]] is undone.
+&lt;/tw-story&gt;
+</tw-passagedata><tw-passagedata pid="2" name="gun case" tags="summer" position="700,500" size="100,100">&lt;html&gt;
+  &lt;style&gt;
+    tw-story {
+      background-color: rgba(0, 0, 0, 0.6); /* Transparent black */
+      color: white;
+      font-family: Franklin Gothic, serif;
+      padding: 10px; /* Optional: adds some padding around the text */
+      font-size: 24px; /* Adjusted font size for smaller text */
+      display: inline-block;
+    }
+  &lt;/style&gt;
+&lt;/html&gt;
+&lt;tw-story&gt;
+(set: $randomChoice to (either: &quot;[[the door]]&quot;, &quot;[[The door]]&quot;))
 Your shaking hands reach for the gun case atop the refrigerator, and you fumble with the lock. The firearm feels heavy in your hands. As you load it, the weight offers a grim sense of comfort. With the weapon ready, you consider your next move: confront $randomChoice or retreat to [[your bed]].
-</tw-passagedata><tw-passagedata pid="3" name="your bed" tags="" position="500,700" size="100,100">(set: $randomChoice to (either: &quot;[[the door]]&quot;, &quot;[[The door]]&quot;))
-You crawl back into bed. The rhythmic pounding at the door grows louder, once again, are you imagining it? Each impact shaking your walls and rattling your nerves. You press yourself deeper into the mattress as the sound escalates into a deafening roar, drowning out every thought. And then—silence. A silence so absolute, it feels like the world itself has paused. Do you dare check $randomChoice?
+&lt;tw-story&gt;</tw-passagedata><tw-passagedata pid="3" name="your bed" tags="summer" position="300,700" size="100,100">&lt;html&gt;
+  &lt;style&gt;
+    tw-story {
+      background-color: rgba(0, 0, 0, 0.6); /* Transparent black */
+      color: white;
+      font-family: Franklin Gothic, serif;
+      padding: 20px; /* Optional: adds some padding around the text */
+      font-size: 24px; /* Adjusted font size for smaller text */
+      display: inline-block;
+    }
+  &lt;/style&gt;
+&lt;/html&gt;
 
-</tw-passagedata><tw-passagedata pid="4" name="door’s lock" tags="" position="500,500" size="100,100">Adrenaline surges as you rush to the door. Before you can touch the lock, you hear shuffling feet just outside, accompanied by deep voices, speaking a language you don&#39;t recognize. The knocking crescendos into a chaotic mix of scraping, screeching, and pounding, like claws raking against the wood. Your trembling hand flips the lock with a sharp click.
+&lt;tw-story&gt;
+(set: $randomChoice to (either: &quot;[[the door]]&quot;, &quot;[[gun case]]&quot;))
+You crawl back into bed. The rhythmic pounding at the door grows louder, once again, are you imagining it? Each impact shaking your walls and rattling your nerves. You press yourself deeper into the mattress as the sound escalates into a deafening roar, drowning out every thought. And then—silence. A silence so absolute, it feels like the world itself has paused. Do you dare grab $randomChoice?
+&lt;tw-story&gt;
+</tw-passagedata><tw-passagedata pid="4" name="door’s lock" tags="summer" position="500,500" size="100,100">&lt;html&gt;
+  &lt;style&gt;
+    tw-story {
+      background-color: rgba(0, 0, 0, 0.6); /* Transparent black */
+      color: white;
+      font-family: Franklin Gothic, serif;
+      padding: 20px; /* Optional: adds some padding around the text */
+      font-size: 24px; /* Adjusted font size for smaller text */
+      display: inline-block;
+    }
+  &lt;/style&gt;
+&lt;/html&gt;
+
+&lt;tw-story&gt;
+Adrenaline surges as you rush to the door. Before you can touch the lock, you hear shuffling feet just outside, accompanied by deep voices, speaking a language you don&#39;t recognize. The knocking crescendos into a chaotic mix of scraping, screeching, and pounding, like claws raking against the wood. Your trembling hand flips the lock with a sharp click.
 Instantly, the noise stops. The silence that follows is suffocating, ringing across your room. Frozen, you glance around your apartment. The door stands before you, eerily still. In the distance, the faint splashing of the cat&#39;s water dish is the only sound. Your thoughts move a hundred miles an hour as you think about [[the door]], returning to [[your bed]], or grabbing your [[gun case]].
-</tw-passagedata><tw-passagedata pid="5" name="the door" tags="" position="700,700" size="100,100">You approach cautiously. The door’s surface is overpainted, years of the landlord special, nothing about it looks damaged or disturbed. You grip the knob, breath shallow, and slowly pull it open. The hallway outside yawns before you, empty and undisturbed. No sign of anyone—or anything. The air feels cold, and the silence presses in like a living thing.
+&lt;/tw-story&gt;</tw-passagedata><tw-passagedata pid="5" name="the door" tags="summer" position="500,700" size="100,100">&lt;html&gt;
+  &lt;style&gt;
+    tw-story {
+      background-color: rgba(0, 0, 0, 0.6); /* Transparent black */
+      color: white;
+      font-family: Franklin Gothic, serif;
+      padding: 20px; /* Optional: adds some padding around the text */
+      font-size: 24px; /* Adjusted font size for smaller text */
+      display: inline-block;
+    }
+  &lt;/style&gt;
+&lt;/html&gt;
+
+&lt;tw-story&gt;
+You approach cautiously. The door’s surface is overpainted, years of the landlord special, nothing about it looks damaged or disturbed. You grip the knob, breath shallow, and slowly pull it open. The hallway outside yawns before you, empty and undisturbed. No sign of anyone—or anything. The air feels cold, and the silence presses in like a living thing.
 
 You Lose.
-[[Play Again?]]</tw-passagedata><tw-passagedata pid="6" name="getting to sleep" tags="" position="500,300" size="100,100">&lt;audio id=&quot;audioPlayer&quot; style=&quot;display: none;&quot;&gt;
-    &lt;source src=&quot;https://audio.jukehost.co.uk/VnwlEAIMOlgLb9yUp6Vd734PRLNHlSwb.wav&quot; type=&quot;audio/wav&quot;&gt;
-    Your browser does not support the audio element.
-&lt;/audio&gt;
+[[Play Again?]]
+&lt;tw-story&gt;</tw-passagedata><tw-passagedata pid="6" name="getting to sleep" tags="summer" position="500,300" size="100,100">&lt;html&gt;
+  &lt;style&gt;
+    tw-story {
+      background-color: rgba(0, 0, 0, 0.6); /* Transparent black */
+      color: white;
+      font-family: Franklin Gothic, serif;
+      padding: 20px; /* Optional: adds padding around the text */
+      font-size: 24px; /* Adjusted font size for smaller text */
+      display: inline-block;
+    }
 
-&lt;style&gt;
     @keyframes shake {
-        0%, 100% { transform: translateX(0); }
-        10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
-        20%, 40%, 60%, 80% { transform: translateX(10px); }
+      0%, 100% { transform: translateX(0); }
+      10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+      20%, 40%, 60%, 80% { transform: translateX(10px); }
     }
 
     .shake {
-        animation: shake 0.5s ease-in-out;
+      animation: shake 0.5s ease-in-out;
     }
 
     @keyframes grow {
-        0%, 100% { transform: scale(1); }
-        50% { transform: scale(1.5); }
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.5); }
     }
 
     .shake-grow {
-        display: inline-block;
-        animation: shake 0.5s ease-in-out, grow 0.5s ease-in-out;
-        animation-iteration-count: 3;
-        animation-delay: 1s;
-        animation-fill-mode: forwards;
+      display: inline-block;
+      animation: shake 0.5s ease-in-out, grow 0.5s ease-in-out;
+      animation-iteration-count: 3;
+      animation-delay: 1s;
+      animation-fill-mode: forwards;
     }
 
     #clickableImage {
-        cursor: pointer;
-        width: 500px; /* Increased size */
-        height: auto;
-        filter: invert(1); /* Invert the colors */
-        animation: shake 0.5s ease-in-out, grow 0.5s ease-in-out;
-        animation-iteration-count: 3; /* Make the shake and grow happen multiple times */
+      cursor: pointer;
+      width: 500px; /* Increased size */
+      height: auto;
+      filter: invert(1); /* Invert the colors */
+      animation: shake 0.5s ease-in-out, grow 0.5s ease-in-out;
+      animation-iteration-count: 3; /* Make the shake and grow happen multiple times */
     }
-&lt;/style&gt;
+  &lt;/style&gt;
 
-&lt;div class=&quot;shake-grow&quot;&gt;
-    You sink into your pillow, determined to ignore the loud knocking. The faint glow from your cat&#39;s electronic water dish is the only light in the room. As your eyes dart across the darkness, your gaze lands on two things: the unlocked [[door’s lock]] and your [[gun case]] perched atop the refrigerator. The knocking becomes louder, more like a smashing sound, as if a swat team is at [[your door]].
-&lt;/div&gt;
+  &lt;audio id=&quot;audioPlayer&quot; style=&quot;display: none;&quot;&gt;
+    &lt;source src=&quot;https://audio.jukehost.co.uk/VnwlEAIMOlgLb9yUp6Vd734PRLNHlSwb.wav&quot; type=&quot;audio/wav&quot;&gt;
+    Your browser does not support the audio element.
+  &lt;/audio&gt;
 
-&lt;!-- Image that will disappear and trigger audio play --&gt;
-&lt;img id=&quot;clickableImage&quot; src=&quot;https://raw.githubusercontent.com/obi3333/HostedStuff/refs/heads/main/eye-4914536_1280.png&quot; alt=&quot;Click me to play sound&quot; /&gt;
+  &lt;div class=&quot;shake-grow&quot;&gt;
+    &lt;tw-story&gt;
+      You sink into your pillow, determined to ignore the loud knocking. The faint glow from your cat&#39;s electronic water dish is the only light in the room. As your eyes dart across the darkness, your gaze lands on two things: your [[gun case]] perched atop the refrigerator and the knocking which becomes louder, more like a smashing sound, as if a swat team is at [[your door]].
+    &lt;/tw-story&gt;
+  &lt;/div&gt;
 
-&lt;script&gt;
+  &lt;!-- Image that will disappear and trigger audio play --&gt;
+  &lt;img id=&quot;clickableImage&quot; src=&quot;https://raw.githubusercontent.com/obi3333/HostedStuff/refs/heads/main/eye-4914536_1280.png&quot; alt=&quot;Click me to play sound&quot; /&gt;
+
+  &lt;script&gt;
     // Ensure audio is playable after user interaction
     const audioPlayer = document.getElementById(&quot;audioPlayer&quot;);
     const clickableImage = document.getElementById(&quot;clickableImage&quot;);
 
     // Wait for image click to play audio and hide the image
     clickableImage.addEventListener(&quot;click&quot;, function () {
-        // Play the audio
-        audioPlayer.play()
-            .then(() =&gt; {
-                console.log(&quot;Audio is playing.&quot;);
-            })
-            .catch(error =&gt; {
-                console.error(&quot;Audio playback failed:&quot;, error);
-            });
+      // Play the audio
+      audioPlayer.play()
+        .then(() =&gt; {
+          console.log(&quot;Audio is playing.&quot;);
+        })
+        .catch(error =&gt; {
+          console.error(&quot;Audio playback failed:&quot;, error);
+        });
 
-        // Hide the image after click
-        clickableImage.style.display = &quot;none&quot;;
+      // Hide the image after click
+      clickableImage.style.display = &quot;none&quot;;
     });
-&lt;/script&gt;
-</tw-passagedata><tw-passagedata pid="7" name="Play Again?" tags="" position="600,100" size="100,100">&lt;div id=&quot;titleScreen&quot;&gt;
-    &lt;h1&gt;The Knocking&lt;/h1&gt;
-    &lt;button id=&quot;startButton&quot;&gt;Begin&lt;/button&gt;
-&lt;/div&gt;
-
-&lt;div id=&quot;storyScreen&quot; style=&quot;display: none;&quot;&gt;
-    &lt;div id=&quot;story&quot;&gt;
-        The dim lights in your apartment flicker, shadows stretching across the walls as you begin to nod off. Just as sleep takes hold, a loud knocking shatters the silence. The sound reverberates through the apartment, pulling you upright. You glance at the oven clock—1:11 AM. The relentless pounding feels almost unreal, as though you have fallen into a dream. [[getting to sleep]] or [[your door]]?
-    &lt;/div&gt;
-
-    &lt;audio id=&quot;audioPlayer&quot; style=&quot;display: none;&quot;&gt;
-        &lt;source src=&quot;https://audio.jukehost.co.uk/Z5IXPaJ9OPDnBp8ZbvPMPF9YDAEGdAnv.mp3&quot; type=&quot;audio/mp3&quot;&gt;
-    &lt;/audio&gt;
-
-    &lt;!-- Image and text to click --&gt;
-    &lt;div id=&quot;clickableImageContainer&quot;&gt;
-        &lt;img id=&quot;clickableImage&quot; src=&quot;https://raw.githubusercontent.com/obi3333/HostedStuff/refs/heads/main/eye-4914536_1280.png&quot; alt=&quot;Click me to play sound&quot; /&gt;
-        &lt;span id=&quot;imageText&quot;&gt;If you see me click immediately&lt;/span&gt;
-    &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;style&gt;
-    @keyframes shake {
-        0%, 100% { transform: translateX(0); }
-        10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
-        20%, 40%, 60%, 80% { transform: translateX(10px); }
+  &lt;/script&gt;
+&lt;/html&gt;
+</tw-passagedata><tw-passagedata pid="7" name="The door" tags="snow" position="700,700" size="100,100">&lt;html&gt;
+  &lt;style&gt;
+    tw-story {
+      background-color: rgba(0, 0, 0, 0.6); /* Transparent black */
+      color: white;
+      font-family: Franklin Gothic, serif;
+      padding: 20px; /* Optional: adds some padding around the text */
+      font-size: 24px; /* Adjusted font size for smaller text */
+      display: inline-block;
     }
+  &lt;/style&gt;
+&lt;/html&gt;
 
-    .shake {
-        animation: shake 0.5s ease-in-out;
-    }
+&lt;tw-story&gt;
+Your fingers hesitate on the doorknob, the pounding suddenly replaced by gruff voices outside. You hear faint murmurs—commands, maybe—and the shuffle of boots. Swallowing hard, you pull the door open, gun still clenched in your hand but held behind your back.
 
-    #titleScreen {
-        text-align: center;
-        margin-top: 20%;
-    }
-
-    #startButton {
-        font-size: 20px;
-        padding: 10px 20px;
-        cursor: pointer;
-    }
-
-    #clickableImageContainer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 20px;
-    }
-
-    #clickableImage {
-        cursor: pointer;
-        width: 150px;
-        height: auto;
-        filter: invert(1); /* Inverts image colors */
-        margin-right: 10px;
-        animation: shake 0.5s ease-in-out, grow 0.5s ease-in-out;
-        animation-iteration-count: 3;
-    }
-
-    #imageText {
-        font-size: 18px;
-        color: white;
-    }
-&lt;/style&gt;
-
-&lt;script&gt;
-    const startButton = document.getElementById(&quot;startButton&quot;);
-    const titleScreen = document.getElementById(&quot;titleScreen&quot;);
-    const storyScreen = document.getElementById(&quot;storyScreen&quot;);
-    const story = document.getElementById(&quot;story&quot;);
-    const audioPlayer = document.getElementById(&quot;audioPlayer&quot;);
-    const clickableImage = document.getElementById(&quot;clickableImage&quot;);
-
-    // Handle transition from title to story
-    startButton.addEventListener(&quot;click&quot;, () =&gt; {
-        titleScreen.style.display = &quot;none&quot;;
-        storyScreen.style.display = &quot;block&quot;;
-
-        // Play the audio
-        audioPlayer.play();
-
-        // Function to apply shake animation with delay
-        const applyShake = (count) =&gt; {
-            if (count &gt; 0) {
-                story.classList.add(&quot;shake&quot;);
-                setTimeout(() =&gt; {
-                    story.classList.remove(&quot;shake&quot;);
-                    setTimeout(() =&gt; applyShake(count - 1), 3000); // Pause for 2 seconds
-                }, 800); // Duration of the shake
-            }
-        };
-
-        // Start the shaking effect 3 times
-        applyShake(3);
-    });
-
-    // Ensure audio is playable after image click
-    clickableImage.addEventListener(&quot;click&quot;, function () {
-        // Play the audio
-        audioPlayer.play()
-            .then(() =&gt; {
-                console.log(&quot;Audio is playing.&quot;);
-            })
-            .catch(error =&gt; {
-                console.error(&quot;Audio playback failed:&quot;, error);
-            });
-
-        // Hide the image and text after click
-        clickableImage.style.display = &quot;none&quot;;
-        document.getElementById(&quot;imageText&quot;).style.display = &quot;none&quot;;
-    });
-&lt;/script&gt;
-</tw-passagedata><tw-passagedata pid="8" name="The door" tags="" position="900,700" size="100,100">Your fingers hesitate on the doorknob, the pounding suddenly replaced by gruff voices outside. You hear faint murmurs—commands, maybe—and the shuffle of boots. Swallowing hard, you pull the door open, gun still clenched in your hand but held behind your back.
-
-Two figures in tactical gear stand in the dimly lit hallway, illuminated by the buzzing flicker of a failing fluorescent bulb. The word &quot;ICE&quot; is emblazoned in bold white letters on their black vests. One of them, a tall man with a grim expression, steps forward, holding a piece of paper.
+Two figures in tactical gear stand in the dimly lit hallway, illuminated by the buzzing flicker of a failing fluorescent bulb. The word &quot;ICE&quot; is printed in bold white letters on their black vests. One of them, a tall man with a grim expression, steps forward, holding a piece of paper.
 
 &quot;We have a warrant,&quot; he says firmly, though his eyes dart nervously into your room.
 
@@ -220,22 +210,48 @@ Two figures in tactical gear stand in the dimly lit hallway, illuminated by the 
 
 The shorter agent, standing a step behind, fidgets uncomfortably. &quot;This is the address we were given,&quot; he insists, though his confidence is crumbling under your glare.
 
-Do you: [[Let them in]]?, [[ask for the warrant]]?, or [[take action]]?</tw-passagedata><tw-passagedata pid="9" name="take action" tags="" position="900,900" size="100,100">&quot;No,&quot; you say, voice sharp and unwavering. You step back, keeping the gun hidden behind you. &quot;You’re not taking me anywhere until you confirm this warrant and its address.&quot;
+Do you: [[Let them in]]?, or [[ask for the warrant]]?
+&lt;tw-story&gt;</tw-passagedata><tw-passagedata pid="8" name="take action" tags="snow" position="1100,1300" size="100,100">&lt;html&gt;
+  &lt;style&gt;
+    tw-story {
+      background-color: rgba(0, 0, 0, 0.6); /* Transparent black */
+      color: white;
+      font-family: Franklin Gothic, serif;
+      padding: 20px; /* Optional: adds some padding around the text */
+      font-size: 24px; /* Adjusted font size for smaller text */
+      display: inline-block;
+    }
+  &lt;/style&gt;
+&lt;/html&gt;
 
-The agents exchange tense glances. The taller one steps forward, voice low but dangerous. &quot;Sir, you don’t want to make this difficult.&quot;
+&lt;tw-story&gt;
+You take a slow breath, steadying yourself as the taller agent’s eyes narrow. “We’re not leaving without you,” he says, the threat clear in his tone. 
 
-&quot;What’s difficult,&quot; you snap, &quot;is living with the knowledge that people like you are ripping families apart every day over your so-called &#39;mistakes.&#39; What’s difficult is losing everything over a clerical error and hearing ‘sorry’ months later. So no, I won’t let you in.&quot;
+“Then get it right,” you reply, your voice low but firm. “Check the address. Check the warrant. Until then, I’m not moving.” 
 
-The shorter agent stiffens. &quot;Are you threatening us?&quot;
+The tension in the hallway is almost suffocating. The agents linger, caught between their prejudices and your refusal. The fluorescent light buzzes overhead, a faint but grating sound. Finally, the shorter agent pulls out a phone, muttering something into it. 
 
-You shake your head slowly. &quot;I’m just protecting myself. Like you would.&quot;
+After a moment, they turn and walk back down the hall, their boots heavy on the floor. You stay at the door, your hand trembling against the frame. It’s quiet now, but the weight of what just happened presses down on you. 
 
-The hallway feels charged, the fluorescent light buzzing like a warning. Finally, the taller agent exhales sharply. &quot;We’ll verify the address,&quot; he mutters.
+The fear isn’t gone, it can&#39;t be. But in this moment, you’ve held your ground. You’ve forced them to pause, to think, to question. 
 
-The agents retreat down the hall, their boots echoing in the silence. When the door clicks shut, your knees buckle. You don’t know if they’ll be back. But for tonight, at least, you’ve held onto your freedom.
+You lean your head against the door and close your eyes, letting the silence settle. But tonight, you’ve won something that no one can take away: the right to be heard. 
+[[Play Again?]]
+&lt;tw-story&gt;</tw-passagedata><tw-passagedata pid="9" name="ask for the warrant" tags="snow" position="900,900" size="100,100">&lt;html&gt;
+  &lt;style&gt;
+    tw-story {
+      background-color: rgba(0, 0, 0, 0.6); /* Transparent black */
+      color: white;
+      font-family: Franklin Gothic, serif;
+      padding: 20px; /* Optional: adds some padding around the text */
+      font-size: 24px; /* Adjusted font size for smaller text */
+      display: inline-block;
+    }
+  &lt;/style&gt;
+&lt;/html&gt;
 
-Know your rights or everyone Loses.
-[[Play Again?]]</tw-passagedata><tw-passagedata pid="10" name="ask for the warrant" tags="" position="1100,900" size="100,100">&quot;Let me see the warrant,&quot; you say firmly, extending your hand.
+&lt;tw-story&gt;
+&quot;Let me see the warrant,&quot; you say firmly, extending your hand.
 
 The taller agent hesitates, but eventually, he hands it over. Your eyes scan the document, confirming what you already know. &quot;This is for 4B,&quot; you say, holding up the paper. &quot;This is 4D.&quot;
 
@@ -251,7 +267,22 @@ The taller man cuts you off. &quot;We don’t write the reports, sir. We execute
 
 Before you can respond, the shorter agent steps forward, cuffs in hand. &quot;You can either come quietly, or we’ll have to escalate this.&quot;
 
-You frantically look over the Warrant one last time and notice that its [[missing a judges signature]]. You feel a deep pressure in you fighting against the urge to [[take action]] against these men.</tw-passagedata><tw-passagedata pid="11" name="Let them in" tags="" position="700,900" size="100,100">With a deep breath, you step aside, Placing your weapon on the counter by your door, lowering your arm and allowing the two agents to enter. They scan the small apartment with sharp, invasive eyes, flipping through cabinets and inspecting closets.
+You frantically look over the Warrant one last time and notice that its [[missing a judges signature]]. You feel a deep pressure in you fighting against the urge to [[take action]] against these men.
+&lt;tw-story&gt;</tw-passagedata><tw-passagedata pid="10" name="Let them in" tags="snow" position="700,900" size="100,100">&lt;html&gt;
+  &lt;style&gt;
+    tw-story {
+      background-color: rgba(0, 0, 0, 0.6); /* Transparent black */
+      color: white;
+      font-family: Franklin Gothic, serif;
+      padding: 20px; /* Optional: adds some padding around the text */
+      font-size: 24px; /* Adjusted font size for smaller text */
+      display: inline-block;
+    }
+  &lt;/style&gt;
+&lt;/html&gt;
+
+&lt;tw-story&gt;
+With a deep breath, you step aside, Placing your weapon on the counter by your door, lowering your arm and allowing the two agents to enter. They scan the small apartment with sharp, invasive eyes, flipping through cabinets and inspecting closets.
 
 &quot;You’re wasting your time,&quot; you say, trying to keep your voice steady. &quot;I’ve lived here for years—this is my home.&quot;
 
@@ -270,7 +301,22 @@ At the holding facility, you’re met with blank faces and cold stares. No one l
 By the time the clerical error is acknowledged, you’ve already lost your job, your apartment, and the fragile sense of security you once had. The apology is cursory, a formality. The damage, however, is permanent.
 
 You Lose.
-[[Play Again?]]</tw-passagedata><tw-passagedata pid="12" name="missing a judges signature" tags="" position="1000,1100" size="100,100">Your hands tremble as you hold the warrant up to the flickering light, your eyes zeroing in on the glaring omission. &quot;This warrant is missing a judge’s signature,&quot; you say, voice sharp and rising with defiance.
+[[Play Again?]]
+&lt;tw-story&gt;</tw-passagedata><tw-passagedata pid="11" name="missing a judges signature" tags="snow" position="800,1100" size="100,100">&lt;html&gt;
+  &lt;style&gt;
+    tw-story {
+      background-color: rgba(0, 0, 0, 0.6); /* Transparent black */
+      color: white;
+      font-family: Franklin Gothic, serif;
+      padding: 20px; /* Optional: adds some padding around the text */
+      font-size: 24px; /* Adjusted font size for smaller text */
+      display: inline-block;
+    }
+  &lt;/style&gt;
+&lt;/html&gt;
+
+&lt;tw-story&gt;
+Your hands tremble as you hold the warrant up to the flickering light, your eyes zeroing in on the glaring omission. &quot;This warrant is missing a judge’s signature,&quot; you say, voice sharp and rising with defiance.
 
 The taller agent stiffens, his jaw clenching. &quot;That doesn’t matter,&quot; he says after a beat, though his voice lacks conviction. &quot;We have the authority to detain based on probable cause.&quot;
 
@@ -280,7 +326,22 @@ The shorter agent glances nervously at his partner. &quot;It’s late,&quot; he 
 
 But the taller one doesn’t back down. He steps closer, looming. &quot;Sir, resisting will only make this worse for you.&quot;
 
-Your heart pounds as you weigh your options. [[Slam the door]] in their faces? [[take action]]?</tw-passagedata><tw-passagedata pid="13" name="Slam the door" tags="" position="1000,1300" size="100,100">&quot;I know my rights!&quot; you say firmly, slamming the door shut in the faces of the stunned ICE agents.
+Your heart pounds as you weigh your options. [[Slam the door]] in their faces? [[take action]]?
+&lt;tw-story&gt;</tw-passagedata><tw-passagedata pid="12" name="Slam the door" tags="summer" position="900,1300" size="100,100">&lt;html&gt;
+  &lt;style&gt;
+    tw-story {
+      background-color: rgba(0, 0, 0, 0.6); /* Transparent black */
+      color: white;
+      font-family: Franklin Gothic, serif;
+      padding: 20px; /* Optional: adds some padding around the text */
+      font-size: 24px; /* Adjusted font size for smaller text */
+      display: inline-block;
+    }
+  &lt;/style&gt;
+&lt;/html&gt;
+
+&lt;tw-story&gt;
+&quot;I know my rights!&quot; you say firmly, slamming the door shut in the faces of the stunned ICE agents.
 
 You click both locks into place with a deliberate, final sound, your voice steady as you speak through the door. &quot;Come back with a legitimate warrant. Until then, stop harassing citizens.&quot;
 
@@ -288,7 +349,153 @@ The silence that follows feels deafening, but it&#39;s a silence you&#39;ve earn
 
 You win.
 Know your rights.
-[[Play Again?]]</tw-passagedata></tw-storydata>
+[[Play Again?]]
+&lt;tw-story&gt;</tw-passagedata><tw-passagedata pid="13" name="Play Again?" tags="snow" position="1000,100" size="100,100">&lt;html&gt;
+  &lt;style&gt;
+    tw-story {
+      background-color: black;
+      color: black; /* Text is now black */
+      font-family: Franklin Gothic, serif;
+      display: inline-block;
+    }
+  &lt;/style&gt;
+&lt;/html&gt;
+&lt;div id=&quot;titleScreen&quot;&gt;
+  &lt;h1&gt;The Knocking&lt;/h1&gt;
+  &lt;button id=&quot;startButton&quot;&gt;Begin&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;storyScreen&quot; style=&quot;display: none;&quot;&gt;
+  &lt;div id=&quot;story&quot;&gt;
+    The dim lights in your apartment flicker, shadows stretching across the walls as you begin to nod off. Just as sleep takes hold, a loud knocking shatters the silence. The sound reverberates through the apartment, pulling you upright. You glance at the oven clock—1:11 AM. The relentless pounding feels almost unreal, as though you have fallen into a dream. &lt;a href=&quot;#&quot; class=&quot;link&quot;&gt;[[getting to sleep]]&lt;/a&gt; or &lt;a href=&quot;#&quot; class=&quot;link&quot;&gt;[[your door]]&lt;/a&gt;?
+  &lt;/div&gt;
+
+  &lt;audio id=&quot;audioPlayer&quot; style=&quot;display: none;&quot;&gt;
+    &lt;source src=&quot;https://audio.jukehost.co.uk/Z5IXPaJ9OPDnBp8ZbvPMPF9YDAEGdAnv.mp3&quot; type=&quot;audio/mp3&quot;&gt;
+  &lt;/audio&gt;
+
+  &lt;!-- Image and text to click --&gt;
+  &lt;div id=&quot;clickableImageContainer&quot;&gt;
+    &lt;img
+      id=&quot;clickableImage&quot;
+      src=&quot;https://raw.githubusercontent.com/obi3333/HostedStuff/refs/heads/main/eye-4914536_1280.png&quot;
+      alt=&quot;Click me to play sound&quot;
+    /&gt;
+    &lt;span id=&quot;imageText&quot; style=&quot;color: black;&quot;&gt;If you see me click immediately&lt;/span&gt; &lt;!-- Changed color to black --&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;style&gt;
+  @keyframes shake {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+      transform: translateX(-10px);
+    }
+    20%, 40%, 60%, 80% {
+      transform: translateX(10px);
+    }
+  }
+
+  .shake {
+    animation: shake 0.5s ease-in-out;
+  }
+
+  #titleScreen {
+    text-align: center;
+    margin-top: 20%;
+  }
+
+  #startButton {
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  #clickableImageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  #clickableImage {
+    cursor: pointer;
+    width: 150px;
+    height: auto;
+    margin-right: 10px;
+    animation: shake 0.5s ease-in-out, grow 0.5s ease-in-out;
+    animation-iteration-count: 3;
+  }
+
+  #imageText {
+    font-size: 18px;
+    color: black; /* Text is now black */
+  }
+
+  .link {
+    text-decoration: none;
+    color: #FF4500; /* Default link color in hex */
+  }
+
+  .link:hover {
+    color: #00FF00; /* Hover link color in hex */
+  }
+&lt;/style&gt;
+
+&lt;script&gt;
+  const startButton = document.getElementById(&quot;startButton&quot;);
+  const titleScreen = document.getElementById(&quot;titleScreen&quot;);
+  const storyScreen = document.getElementById(&quot;storyScreen&quot;);
+  const story = document.getElementById(&quot;story&quot;);
+  const audioPlayer = document.getElementById(&quot;audioPlayer&quot;);
+  const clickableImage = document.getElementById(&quot;clickableImage&quot;);
+
+  // Handle transition from title to story
+  startButton.addEventListener(&quot;click&quot;, () =&gt; {
+    titleScreen.style.display = &quot;none&quot;;
+    storyScreen.style.display = &quot;block&quot;;
+
+    // Play the audio
+    audioPlayer.play();
+
+    // Function to apply shake animation with delay
+    const applyShake = (count) =&gt; {
+      if (count &gt; 0) {
+        story.classList.add(&quot;shake&quot;);
+        setTimeout(() =&gt; {
+          story.classList.remove(&quot;shake&quot;);
+          setTimeout(() =&gt; applyShake(count - 1), 3000); // Pause for 2 seconds
+        }, 800); // Duration of the shake
+      }
+    };
+
+    // Start the shaking effect 3 times
+    applyShake(3);
+  });
+
+  // Ensure audio is playable after image click
+  clickableImage.addEventListener(&quot;click&quot;, function () {
+    // Invert the image color through JavaScript
+    clickableImage.style.filter = &#39;invert(100%)&#39;;
+
+    // Play the audio
+    audioPlayer
+      .play()
+      .then(() =&gt; {
+        console.log(&quot;Audio is playing.&quot;);
+      })
+      .catch((error) =&gt; {
+        console.error(&quot;Audio playback failed:&quot;, error);
+      });
+
+    // Hide the image and text after click
+    clickableImage.style.display = &quot;none&quot;;
+    document.getElementById(&quot;imageText&quot;).style.display = &quot;none&quot;;
+  });
+&lt;/script&gt;
+</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
